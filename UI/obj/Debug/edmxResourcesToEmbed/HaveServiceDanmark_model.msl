@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="HaveServiceDanmarkModelStoreContainer" CdmEntityContainer="Entities">
+    <EntitySetMapping Name="Customer">
+      <EntityTypeMapping TypeName="HaveServiceDanmarkModel.Customer">
+        <MappingFragment StoreEntitySet="Customer">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Address" ColumnName="Address" />
+          <ScalarProperty Name="Phone_Number" ColumnName="Phone Number" />
+          <ScalarProperty Name="Zipcode" ColumnName="Zipcode" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="EquipmentRent">
+      <EntityTypeMapping TypeName="HaveServiceDanmarkModel.EquipmentRent">
+        <MappingFragment StoreEntitySet="EquipmentRent">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Company_Name" ColumnName="Company Name" />
+          <ScalarProperty Name="Company_Address" ColumnName="Company Address" />
+          <ScalarProperty Name="Company_Phone_Number" ColumnName="Company Phone Number" />
+          <ScalarProperty Name="Others" ColumnName="Others" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Renovation">
+      <EntityTypeMapping TypeName="HaveServiceDanmarkModel.Renovation">
+        <MappingFragment StoreEntitySet="Renovation">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="ClientAddress" ColumnName="ClientAddress" />
+          <ScalarProperty Name="Startdate" ColumnName="Startdate" />
+          <ScalarProperty Name="EndDate" ColumnName="EndDate" />
+          <ScalarProperty Name="Price" ColumnName="Price" />
+          <ScalarProperty Name="Area" ColumnName="Area" />
+          <ScalarProperty Name="Decription" ColumnName="Decription" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

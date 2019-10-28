@@ -1,0 +1,39 @@
+﻿<Window x:Class="UI.Renovation"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:UI"
+        mc:Ignorable="d"
+        Title="Custumer" Height="483.221" Width="616.889">
+    <Grid Margin="0,0,5.222,0.222">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition Width="0*"/>
+        </Grid.ColumnDefinitions>
+        <Button x:Name="btnRent" Content="Udlejning" HorizontalAlignment="Left" VerticalAlignment="Top" Width="158" Margin="10,10,0,0" Height="54" Click="BtnRent_Click"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="10,107,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" x:Name="tbClientAddress"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="164,159,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" x:Name="tbStartDate"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="10,159,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" x:Name="tbEndDate"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="164,107,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" x:Name="tbPrice"/>
+        <DataGrid HorizontalAlignment="Left" Height="186" Margin="10,227,0,0" VerticalAlignment="Top" Width="591" x:Name="dtgClientInfoShow"/>
+        <Button x:Name="btnCustumer" Content="Kunder" HorizontalAlignment="Left" VerticalAlignment="Top" Width="158" Margin="443,10,0,0" Height="54" Click="BtnCustumer_Click"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="324,107,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" x:Name="tbArea"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="324,159,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" x:Name="tbDecription"/>
+        <Button x:Name="btnShowDB" Content="Show" HorizontalAlignment="Left" Margin="526,202,0,0" VerticalAlignment="Top" Width="75" Click="BtnShowDB_Click" Height="20"/>
+        <TextBlock HorizontalAlignment="Left" Margin="10,143,0,0" TextWrapping="Wrap" Text="Slut Dato" VerticalAlignment="Top" RenderTransformOrigin="-1.296,1.198" Height="16" Width="49"/>
+        <TextBlock HorizontalAlignment="Left" Margin="10,91,0,0" TextWrapping="Wrap" Text="Kunde Adresse" VerticalAlignment="Top" Height="16" Width="79"/>
+        <TextBlock HorizontalAlignment="Left" Margin="164,143,0,0" TextWrapping="Wrap" Text="Start Dato" VerticalAlignment="Top" RenderTransformOrigin="-1.296,1.198" Height="16" Width="53"/>
+        <TextBlock HorizontalAlignment="Left" Margin="164,91,0,0" TextWrapping="Wrap" Text="Pris" VerticalAlignment="Top" RenderTransformOrigin="-1.296,1.198" Height="16" Width="19"/>
+        <TextBlock HorizontalAlignment="Left" Margin="324,91,0,0" TextWrapping="Wrap" Text="Areal" VerticalAlignment="Top" RenderTransformOrigin="-1.296,1.198" Height="16" Width="27"/>
+        <TextBlock HorizontalAlignment="Left" Margin="324,143,0,0" TextWrapping="Wrap" Text="Beskrivelse" VerticalAlignment="Top" RenderTransformOrigin="-1.296,1.198" Height="16" Width="58"/>
+        <Button x:Name="btnAdd" Content="Tilføj" HorizontalAlignment="Left" Margin="10,427,0,0" VerticalAlignment="Top" Width="75" Click="BtnAdd_Click" Height="20"/>
+        <Button x:Name="btnChange" Content="Ændre" HorizontalAlignment="Left" Margin="108,427,0,0" VerticalAlignment="Top" Width="75"/>
+        <Button x:Name="btnDelete" Content="Slet" HorizontalAlignment="Left" Margin="219,427,0,0" VerticalAlignment="Top" Width="75"/>
+        <TextBlock HorizontalAlignment="Left" Margin="324,427,0,0" TextWrapping="Wrap" Text="ID" VerticalAlignment="Top" Height="19"/>
+        <TextBox x:Name="tbID" HorizontalAlignment="Left" Height="20" Margin="347,427,0,0" TextWrapping="Wrap" Text=" " VerticalAlignment="Top" Width="120"/>
+        <TextBlock HorizontalAlignment="Left" Margin="186,16,0,0" TextWrapping="Wrap" Text="Istandsættesle af have " VerticalAlignment="Top" FontSize="24"/>
+
+    </Grid>
+</Window>
+

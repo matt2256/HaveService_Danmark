@@ -1,0 +1,27 @@
+﻿<Window x:Class="UI.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:UI"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="608.445">
+    <Grid Margin="0,0,5.556,-0.333">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="186*"/>
+            <ColumnDefinition Width="79*"/>
+        </Grid.ColumnDefinitions>
+        <Button x:Name="btnCustumer" Content="Kunder" HorizontalAlignment="Left" VerticalAlignment="Top" Width="158" Margin="10,61,0,0" Height="54" Click="BtnCustumer_Click"/>
+        <Button x:Name="btnRent" Content="Udlejning" HorizontalAlignment="Left" VerticalAlignment="Top" Width="158" Margin="229,61,0,0" Height="54" Click="BtnRent_Click"/>
+        <Button x:Name="btnRenovation" Content="Istandsættelse af have" HorizontalAlignment="Left" VerticalAlignment="Top" Width="158" Margin="436,61,0,0" Height="54" Click="BtnRenovation_Click" Grid.ColumnSpan="2"/>
+        <DataGrid x:Name="dtgClientInfo" HorizontalAlignment="Left" Height="158" Margin="10,255,0,0" VerticalAlignment="Top" Width="584" Grid.ColumnSpan="2"/>
+        <TextBlock HorizontalAlignment="Center" Margin="180,10,0,0" TextWrapping="Wrap" Text="HaveService Danmark" VerticalAlignment="Top" Height="36" Width="240" FontSize="24"/>
+        <TextBlock HorizontalAlignment="Center" Margin="196,130,162.222,0" TextWrapping="Wrap" Text="Valg af database " VerticalAlignment="Top" Height="36" Width="240" FontSize="24" Grid.ColumnSpan="2"/>
+        <Button x:Name="btnCustumerDB" Content="Kunder" HorizontalAlignment="Left" VerticalAlignment="Top" Width="158" Margin="10,180,0,0" Height="54" Click="BtnCustumerDB_Click"/>
+        <Button x:Name="btnRentDB" Content="Udlejning" HorizontalAlignment="Left" VerticalAlignment="Top" Width="158" Margin="229,180,0,0" Height="54" Click="BtnRentDB_Click"/>
+        <Button x:Name="btnRenovationDB" Content="Istandsættelse af have" HorizontalAlignment="Left" VerticalAlignment="Top" Width="158" Margin="16,180,0,0" Height="54" Grid.Column="1" Click="BtnRenovationDB_Click"/>
+
+
+
+    </Grid>
+</Window>

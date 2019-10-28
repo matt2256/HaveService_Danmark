@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="HaveServiceDanmarkModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="Customer">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Name" Type="varchar" MaxLength="255" Nullable="false" />
+    <Property Name="Address" Type="varchar" MaxLength="255" Nullable="false" />
+    <Property Name="Phone Number" Type="int" Nullable="false" />
+    <Property Name="Zipcode" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="EquipmentRent">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Company Name" Type="varchar" MaxLength="255" Nullable="false" />
+    <Property Name="Company Address" Type="varchar" MaxLength="255" Nullable="false" />
+    <Property Name="Company Phone Number" Type="int" Nullable="false" />
+    <Property Name="Others" Type="varchar" MaxLength="255" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Renovation">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="ClientAddress" Type="varchar" MaxLength="255" Nullable="false" />
+    <Property Name="Startdate" Type="datetime" Nullable="false" />
+    <Property Name="EndDate" Type="datetime" Nullable="false" />
+    <Property Name="Price" Type="int" Nullable="false" />
+    <Property Name="Area" Type="int" Nullable="false" />
+    <Property Name="Decription" Type="varchar" MaxLength="255" Nullable="false" />
+  </EntityType>
+  <EntityContainer Name="HaveServiceDanmarkModelStoreContainer">
+    <EntitySet Name="Customer" EntityType="Self.Customer" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="EquipmentRent" EntityType="Self.EquipmentRent" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Renovation" EntityType="Self.Renovation" Schema="dbo" store:Type="Tables" />
+  </EntityContainer>
+</Schema>

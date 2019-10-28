@@ -1,0 +1,35 @@
+﻿<Window x:Class="UI.Rent"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:UI"
+        mc:Ignorable="d"
+        Title="Custumer" Height="461.556" Width="524.445">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition Width="0*"/>
+        </Grid.ColumnDefinitions>
+        <Button x:Name="btnRenovation" Content="Istandsættelse af have" HorizontalAlignment="Left" VerticalAlignment="Top" Width="158" Margin="348,10,0,0" Height="54" Click="BtnRenovation_Click"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="10,107,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" x:Name="tbCompName"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="157,159,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" x:Name="tbCompAddress"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="10,159,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" x:Name="tbCompPhoneNumber"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="157,107,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" x:Name="tbCompOthers"/>
+        <DataGrid HorizontalAlignment="Left" Height="186" Margin="10,202,0,0" VerticalAlignment="Top" Width="496" x:Name="dtgClientInfoShow"/>
+        <Button x:Name="btnCustumer" Content="Kunder" HorizontalAlignment="Left" VerticalAlignment="Top" Width="158" Margin="10,10,0,0" Height="54" Click="BtnCustumer_Click"/>
+        <Button x:Name="btnShowDB" Content="Se indhold" HorizontalAlignment="Left" Margin="431,162,0,0" VerticalAlignment="Top" Width="75" Click="BtnShowDB_Click" Height="20"/>
+        <TextBlock HorizontalAlignment="Left" Margin="10,91,0,0" TextWrapping="Wrap" Text="Firma navn" VerticalAlignment="Top" Height="16" Width="58"/>
+        <TextBlock HorizontalAlignment="Left" Margin="10,143,0,0" TextWrapping="Wrap" Text="Firma telefonnummer" VerticalAlignment="Top" Height="16" Width="114"/>
+        <TextBlock HorizontalAlignment="Left" Margin="157,91,0,0" TextWrapping="Wrap" Text="Andet" VerticalAlignment="Top" Height="16" Width="32"/>
+        <TextBlock HorizontalAlignment="Left" Margin="157,143,0,0" TextWrapping="Wrap" Text="Firma Adresse" VerticalAlignment="Top" Height="16" Width="74"/>
+        <Button x:Name="btnComp" Content="Indsæt firma" HorizontalAlignment="Left" Margin="10,405,0,0" VerticalAlignment="Top" Width="75" Click="BtnComp_Click" Height="20"/>
+        <TextBlock HorizontalAlignment="Left" Margin="220,16,0,0" TextWrapping="Wrap" Text="Leje af udstyr" VerticalAlignment="Top" FontSize="24" Height="32" Width="141"/>
+        <Button x:Name="btnChange" Content="Ændre" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="114,405,0,0"/>
+        <Button x:Name="btnDelete" Content="Slet" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="220,405,0,0"/>
+        <TextBlock HorizontalAlignment="Left" Margin="320,405,0,0" TextWrapping="Wrap" Text="ID" VerticalAlignment="Top" Height="20"/>
+        <TextBox x:Name="tbID" HorizontalAlignment="Left" Height="20" Margin="337,405,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+
+    </Grid>
+</Window>
+         
